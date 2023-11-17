@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-Search{
+    background-color: rgb(106, 160, 214);
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+ 
+}
+

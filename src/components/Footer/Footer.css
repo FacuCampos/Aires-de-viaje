@@ -1,0 +1,28 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.container-footer{
+    background-color: rgb(49, 62, 75);
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5rem;
+   
+}
+.parrafo-footer{
+     justify-content: space-between;
+    align-self: center;
+    display: inline-flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+.containerIcon-footer{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap:2rem;
+}

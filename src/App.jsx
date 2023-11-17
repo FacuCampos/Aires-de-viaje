@@ -1,4 +1,4 @@
-import { Counter, NavBar } from "./components"
+import { Counter, Footer, NavBar, SearchInput } from "./components"
 
 
 
@@ -8,8 +8,10 @@ function App() {
 
   return (
     <>
+    <SearchInput/>
     <NavBar/>
     <Counter/>
+    <Footer/>
 
 
     </>
