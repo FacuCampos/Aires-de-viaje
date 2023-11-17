@@ -1,4 +1,14 @@
-.ImgCart{
-    width: 200px;
+.container-cart{
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+}
+
+.bi{
+
     border-radius: 40px;
+    color: aliceblue;
+}
+strong{
+    color: aliceblue;
 }
