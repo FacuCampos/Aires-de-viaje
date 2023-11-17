@@ -1,6 +1,7 @@
 import React from 'react'
 import './NavBar.css'
 import CartWidget from '../CartWidget/CartWidget'
+import { AirplaneFill, BuildingsFill } from 'react-bootstrap-icons'
 
 
 const NavBar = () => {
@@ -10,8 +11,8 @@ const NavBar = () => {
     <nav>
         <ul>
         
-            <li><i class="bi bi-airplane-engines-fill"></i>Avion</li>
-            <li>Hola x 2</li>
+            <li><AirplaneFill />Avion</li>
+            <li><BuildingsFill />Hola x 2</li>
             <li>Hola x 3</li>
         </ul>
     </nav>
