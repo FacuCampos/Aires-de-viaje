@@ -1,27 +1,40 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Counter.css";
 
-const Counter = () => {
-  const [contador, setContador] = useState(1);
+const Counter = ({stock, initial}) => {
+  const [contador, setContador] = useState(initial);
+
+  useEffect(()=>{
+    document.title=`contador:  ${contador}`
+    if (contador >= 5){
+      document.getElementById('btn').style.color='red';
+      
+    }
+
+  }, [contador])
+
   const increment = () => {
-    if (contador < 10) {
+    if (contador < stock) {
       setContador(contador + 1);
     }
   };
 
   const decrement = () => {
-    if (contador > 1) {
+    if (contador > initial ) {
       setContador(contador - 1);
     }
   };
-
+ const addToCart = ()=>{
+  console.log(`Agregado ${contador} boletos`);
+ }
   return (
 
     <div className="container-counter">
         <h2>Aca va un contador:</h2>
       <button onClick={decrement}>-</button>
-      <p>{contador}</p>
+      <h3>{contador}</h3>
       <button onClick={increment}>+</button>
+      <button onClick={addToCart} id="btn"> Add </button>
     </div>
   );
 };

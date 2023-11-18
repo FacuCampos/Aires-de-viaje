@@ -10,7 +10,7 @@ function App() {
     <>
     <SearchInput/>
     <NavBar/>
-    <Counter/>
+    <Counter stock={10} initial={1}/>
     <Footer/>
 
 
