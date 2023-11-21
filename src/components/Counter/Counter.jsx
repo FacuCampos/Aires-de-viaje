@@ -25,7 +25,7 @@ const Counter = ({stock, initial}) => {
     }
   };
  const addToCart = ()=>{
-  console.log(`Agregado ${contador} boletos`);
+  alert(`Agregado ${contador} boletos`);
  }
   return (
 

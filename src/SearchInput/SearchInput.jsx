@@ -1,3 +1,4 @@
+import { Login } from "../components"
 import "./SearchInput.css"
 import { PeopleFill } from 'react-bootstrap-icons'
 
@@ -7,7 +8,8 @@ const SearchInput = () => {
   
     <input  type="text" placeholder="🔍Search"/>
     <button type="submit">Buscar</button>
- <p><PeopleFill/> Login</p>
+ <p><PeopleFill/> </p>
+ <Login/>
  </div>
 )
 }
