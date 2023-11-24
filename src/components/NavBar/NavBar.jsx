@@ -1,6 +1,6 @@
 import React from 'react'
 import './NavBar.css'
-import CartWidget from '../CartWidget/CartWidget'
+import { CartWidget } from '../../components'
 import { AirplaneFill, BuildingsFill,BriefcaseFill ,HousesFill,CarFrontFill } from 'react-bootstrap-icons'
 
 

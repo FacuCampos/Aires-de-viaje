@@ -1,6 +1,4 @@
-import { Counter, Footer, NavBar, SearchInput } from "./components"
-
-
+import { Counter, Footer, Navbar, SearchInput } from "./components"
 
 
 function App() {
@@ -8,12 +6,10 @@ function App() {
 
   return (
     <>
-    <SearchInput/>
-    <NavBar/>
-    <Counter stock={10} initial={1}/>
-    <Footer/>
-
-
+      <SearchInput/>
+      <Navbar/>
+      <Counter stock={10} initial={1}/>
+      <Footer/>
     </>
   
   )
