@@ -1,4 +1,5 @@
 import { Counter, Footer, Navbar, SearchInput } from "./components"
+import Navigation from "./routes/Navigation"
 
 
 function App() {
@@ -6,10 +7,7 @@ function App() {
 
   return (
     <>
-      <SearchInput/>
-      <Navbar/>
-      <Counter stock={10} initial={1}/>
-      <Footer/>
+      <Navigation />
     </>
   
   )

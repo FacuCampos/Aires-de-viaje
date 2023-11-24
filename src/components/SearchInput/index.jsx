@@ -1,4 +1,4 @@
-import { Login } from "../../components"
+import { Login } from ".."
 import "./SearchInput.css"
 import { PeopleFill } from 'react-bootstrap-icons'
 
