@@ -1,9 +1,9 @@
-import './CartWidget.css'
+import { BasketFill } from 'react-bootstrap-icons';
 
 const CartWidget = () => {
   return (
-    <div className='container-cart'>
-        <i  className="bi bi-basket3-fill" ></i>
+    <div className='cartWidget-container'>
+        <BasketFill className='cartWidget-icon'/>
         <strong>0</strong>
     </div>
   )

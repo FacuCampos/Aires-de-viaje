@@ -1,4 +1,3 @@
-import { Counter, Footer, Navbar, SearchInput } from "./components"
 import Navigation from "./routes/Navigation"
 
 

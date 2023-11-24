@@ -1,0 +1,13 @@
+.counter-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    button{
+        background-color: rgb(106, 160, 214);
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+}

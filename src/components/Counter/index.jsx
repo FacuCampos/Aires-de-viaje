@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import "./Counter.css";
 
 const Counter = ({ stock, initial }) => {
   const [contador, setContador] = useState(initial);
@@ -29,7 +28,7 @@ const Counter = ({ stock, initial }) => {
   }
   return (
 
-    <div className="container-counter">
+    <div className="counter-container">
       <h2>Aca va un contador:</h2>
       <button onClick={decrement}>-</button>
       <h3>{contador}</h3>

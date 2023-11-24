@@ -1,0 +1,14 @@
+// Abstracts
+@import './scss/abstracts/vars';
+@import './scss/abstracts/mixins';
+
+// Base
+@import './scss/base/resets';
+@import './scss/base/base';
+
+// Components
+@import './scss/components/cartWidget';
+@import './scss/components/counter';
+@import './scss/components/footer';
+@import './scss/components/navBar';
+@import './scss/components/searchInput';

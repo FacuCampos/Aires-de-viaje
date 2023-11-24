@@ -1,9 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.container-Search{
+.searchInput-container{
     background-color: rgb(106, 160, 214);
     display:flex;
     flex-direction: row;
@@ -14,4 +9,3 @@
     padding-bottom: 10px;
  
 }
-

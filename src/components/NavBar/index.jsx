@@ -1,7 +1,6 @@
 import React from 'react'
-import './NavBar.css'
-import { CartWidget } from '..'
-import { AirplaneFill, BuildingsFill,BriefcaseFill ,HousesFill,CarFrontFill } from 'react-bootstrap-icons'
+import { CartWidget } from '../../components'
+import { AirplaneFill, BuildingsFill,BriefcaseFill , HousesFill, CarFrontFill } from 'react-bootstrap-icons'
 
 
 const NavBar = () => {

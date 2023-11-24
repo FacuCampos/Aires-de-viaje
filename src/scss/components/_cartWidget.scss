@@ -1,0 +1,14 @@
+.cartWidget-container{
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+
+    .cartWidget-icon{
+        border-radius: 40px;
+        color: aliceblue;
+    }
+    
+    strong{
+        color: aliceblue;
+    }
+}

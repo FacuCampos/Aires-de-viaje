@@ -1,10 +1,9 @@
-import { Login } from ".."
-import "./SearchInput.css"
-import { PeopleFill } from 'react-bootstrap-icons'
+import { Login } from "../../components";
+import { PeopleFill } from 'react-bootstrap-icons';
 
 const SearchInput = () => {
   return (
-    <div className="container-Search">
+    <div className="searchInput-container">
 
       <input type="text" placeholder="🔍Search" />
       <button type="submit">Buscar</button>
