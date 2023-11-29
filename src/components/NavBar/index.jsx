@@ -1,26 +1,41 @@
 import React from 'react'
-import { CartWidget } from '../../components'
-import { AirplaneFill, BuildingsFill,BriefcaseFill , HousesFill, CarFrontFill } from 'react-bootstrap-icons'
+import { Link } from 'react-router-dom'
+import { AirplaneFill, BuildingsFill,BriefcaseFill , HousesFill, CarFrontFill, HouseFill } from 'react-bootstrap-icons'
+import './NavBar.css'
 
 
 const NavBar = () => {
   return (
-   <header>
-    <h1 className='title'>Aires de Viajes</h1>
-    <nav>
-        <ul>
-        
-            <li><AirplaneFill />Avion</li>
-            <li><BuildingsFill />Hospedajes </li>
-            <li><HousesFill/>Alquileres</li>
-            <li ><BriefcaseFill/>Paquetes</li>
-            <li><CarFrontFill/>autos</li>
-        </ul>
-    </nav>
-    <CartWidget/>
-   </header>
-
-  )
+   
+      <nav className='navegador'>
+        <div className='navList'>
+        <Link to={'/'}className='navLink' >
+           <HouseFill/>
+           <p>Home</p>
+        </Link>
+        <Link to={"/vuelos"}className='navLink' >
+          <AirplaneFill />
+          <p>Vuelos</p>
+        </Link>
+        <Link to={"/hospedajes"} className='navLink'>
+          <BuildingsFill />
+          <p>Hospedajes</p>
+        </Link>
+        <Link to={'/alquileres'} className='navLink'> 
+         <HousesFill />
+         <p>Alquileres</p>
+        </Link>
+        <Link to={'/paquetes'} className='navLink'>
+        <BriefcaseFill />
+        <p>Paquetes</p>
+        </Link >
+        <Link to={'/autos'} className='navLink'>
+          <CarFrontFill />
+          <p>autos</p>
+        </Link>
+        </div>
+      </nav>
+  );
 }
 
 export default NavBar
