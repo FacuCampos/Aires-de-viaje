@@ -1,6 +1,8 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { Home } from "../pages";
-import CheckOut from "../pages/CheckOut";
+import { Alquileres, Autos, CheckOut, Home, Hospedajes, Paquetes, Vuelos } from "../pages";
+
+
+
 
 const routes = createBrowserRouter([
     {
@@ -8,10 +10,32 @@ const routes = createBrowserRouter([
         element: <Home/>
     },
     {
+      path:'/alquileres',
+      element:<Alquileres/>
+
+    },
+    {
+        path:'/vuelos',
+        element:<Vuelos/>
+    },
+   
+    {  
+    path:'/hospedajes',
+    element: <Hospedajes/>
+
+    },
+    {
+        path:'/paquetes',
+        element:<Paquetes/>
+    },
+    {
+        path:'/autos',
+        element:<Autos/>
+    },
+     {
         path:'/checkout',
         element:<CheckOut/>
-    }
-
+    },
 ])
 
 const Navigation = () => {
