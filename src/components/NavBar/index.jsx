@@ -1,41 +1,50 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { AirplaneFill, BuildingsFill,BriefcaseFill , HousesFill, CarFrontFill, HouseFill } from 'react-bootstrap-icons'
-import './NavBar.css'
-
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { AirplaneFill, BuildingsFill, BriefcaseFill, HousesFill, CarFrontFill, HouseFill } from 'react-bootstrap-icons';
 
 const NavBar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
-   
-      <nav className='navegador'>
-        <div className='navList'>
-        <Link to={'/'}className='navLink' >
-           <HouseFill/>
-           <p>Home</p>
+    <nav className={`navegador ${menuOpen ? 'open' : ''}`}>
+      {/* Icono del menú */}
+      <div className='menuIcon' onClick={toggleMenu}>
+        ☰
+      </div>
+
+      {/* Lista de enlaces */}
+      <div className={`navList ${menuOpen ? 'open' : ''}`}>
+        <Link to={'/'} className='navLink'>
+          <HouseFill className='navIcon' />
+          Home
         </Link>
-        <Link to={"/vuelos"}className='navLink' >
-          <AirplaneFill />
-          <p>Vuelos</p>
+        <Link to={"/vuelos"} className='navLink'>
+          <AirplaneFill className='navIcon' />
+          Vuelos
         </Link>
         <Link to={"/hospedajes"} className='navLink'>
-          <BuildingsFill />
-          <p>Hospedajes</p>
+          <BuildingsFill className='navIcon' />
+          Hospedajes
         </Link>
-        <Link to={'/alquileres'} className='navLink'> 
-         <HousesFill />
-         <p>Alquileres</p>
+        <Link to={'/alquileres'} className='navLink'>
+          <HousesFill className='navIcon' />
+          Alquileres
         </Link>
         <Link to={'/paquetes'} className='navLink'>
-        <BriefcaseFill />
-        <p>Paquetes</p>
-        </Link >
-        <Link to={'/autos'} className='navLink'>
-          <CarFrontFill />
-          <p>autos</p>
+          <BriefcaseFill className='navIcon' />
+          Paquetes
         </Link>
-        </div>
-      </nav>
+        <Link to={'/autos'} className='navLink'>
+          <CarFrontFill className='navIcon' />
+          Autos
+        </Link>
+      </div>
+    </nav>
   );
 }
 
-export default NavBar
+export default NavBar;
