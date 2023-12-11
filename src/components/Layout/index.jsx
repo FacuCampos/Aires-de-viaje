@@ -1,11 +1,10 @@
-import { Footer, Navbar, SearchInput } from "../../components"
+import { Footer, LinksSection, Navbar} from "../../components"
 
 const Layout = ({children}) => {
     return(
         <>
-            <SearchInput/>
             <Navbar/>
-            
+            <LinksSection/>
             <main>
                 {children}
             </main>

@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { AirplaneFill, BuildingsFill, BriefcaseFill, HousesFill, CarFrontFill, HouseFill } from 'react-bootstrap-icons';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { X, List, PeopleFill, QuestionCircleFill, CupHotFill, FileEarmarkTextFill, Globe } from "react-bootstrap-icons";
+import { SearchInput } from "..";
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -10,41 +11,42 @@ const NavBar = () => {
   };
 
   return (
-    <nav className={`navegador ${menuOpen ? 'open' : ''}`}>
-      {/* Icono del menú */}
-      <div className='menuIcon' onClick={toggleMenu}>
-        ☰
+    <nav className={`navegador ${menuOpen ? "open" : ""}`}>
+      {/* Barra nav */}
+      {/* Logo */}
+      <h2>Logo</h2>
+      <div className="menuIcon" onClick={toggleMenu}>
+        {menuOpen ? <X /> : <List />}
       </div>
 
-      {/* Lista de enlaces */}
-      <div className={`navList ${menuOpen ? 'open' : ''}`}>
-        <Link to={'/'} className='navLink'>
-          <HouseFill className='navIcon' />
-          Home
-        </Link>
-        <Link to={"/vuelos"} className='navLink'>
-          <AirplaneFill className='navIcon' />
-          Vuelos
-        </Link>
-        <Link to={"/hospedajes"} className='navLink'>
-          <BuildingsFill className='navIcon' />
-          Hospedajes
-        </Link>
-        <Link to={'/alquileres'} className='navLink'>
-          <HousesFill className='navIcon' />
-          Alquileres
-        </Link>
-        <Link to={'/paquetes'} className='navLink'>
-          <BriefcaseFill className='navIcon' />
-          Paquetes
-        </Link>
-        <Link to={'/autos'} className='navLink'>
-          <CarFrontFill className='navIcon' />
-          Autos
-        </Link>
+      {/* Contenido */}
+      <div className={`navList ${menuOpen ? "open" : ""}`}>
+          <li className="navListItem">
+            <SearchInput />
+          </li>
+          <Link className="navListItem">
+            Ingresar
+            <PeopleFill/>
+          </Link>
+          <Link>
+            Blog
+            <FileEarmarkTextFill/>
+          </Link>
+          <Link>
+            Quienes somos
+            <CupHotFill/>
+          </Link>
+          <Link>
+            FAQs
+            <QuestionCircleFill/>
+          </Link>
+          <Link>
+            Idioma
+            <Globe/>
+          </Link>
       </div>
     </nav>
   );
-}
+};
 
 export default NavBar;
