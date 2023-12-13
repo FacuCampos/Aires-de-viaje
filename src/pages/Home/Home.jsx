@@ -10,13 +10,13 @@ const Home = () => {
         </div>
         <div className="logos-home">
           <h4>Compará cientos de sitios de viajes en una sola búsqueda</h4>
-          <img className="imgLogos" src="./Image/tuismoLogo.jpeg" alt="turismocity" />
+{/*           <img className="imgLogos" src="./Image/tuismoLogo.jpeg" alt="turismocity" />
           <img className="imgLogos" src="./Image/avantrip.png" alt="avantrip" />
           <img className="imgLogos" src="./Image/Flybondi.png" alt="flybondi" />
           <img className="imgLogos" src="./Image/volala.jpg" alt="volala" />
           <img className="imgLogos" src="./Image/atrapalo.png" alt="atrapalo" />
           <img className="imgLogos" src="./Image/aerolineas-argentina.jpg" alt="aerolineas argentinas" />
-
+ */}
         </div>
     </Layout>
   )
