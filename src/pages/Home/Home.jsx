@@ -4,6 +4,7 @@ import './Home.css'
 const Home = () => {
   return (
     <Layout>
+        <div><h1 className="title">Descubri tu viaje soñado</h1></div>
         <div className="Img-home" >
       
           <h1 className="titleHome">Vuelos baratos, compará y pagá menos por viajar</h1>
