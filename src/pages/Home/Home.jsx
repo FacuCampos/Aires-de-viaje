@@ -1,8 +1,10 @@
 import { Layout } from "../../components"
 import './Home.css'
 
+
 const Home = () => {
   return (
+  
     <Layout>
         <div className="Img-home" >
       
@@ -18,7 +20,12 @@ const Home = () => {
           <img className="imgLogos" src="./Image/aerolineas-argentina.jpg" alt="aerolineas argentinas" />
  */}
         </div>
+      
+      
+
     </Layout>
+      
+
   )
 }
 

@@ -36,8 +36,9 @@ const NavBar = () => {
         <hr className="m-0"/>
         <NavLink className="navbarItem">
           <CupHotFill/>
-          <p>Quienes somos</p>
+       <NavLink to="/Nosotros"> <p>Quienes somos</p></NavLink>
         </NavLink>
+        
         <hr className="m-0"/>
         <NavLink className="navbarItem">
           <QuestionCircleFill/>
