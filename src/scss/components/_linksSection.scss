@@ -8,6 +8,14 @@
     border-bottom: 1px solid #000;  // Borde en la parte inferior
     box-shadow: 0px 4px 4px -2px rgba(0, 0, 0, 0.5); 
 
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    padding: 0;
+}
+
+.LinksSectionGroup::-webkit-scrollbar {
+    height: 0;
 }
 
 .container {
