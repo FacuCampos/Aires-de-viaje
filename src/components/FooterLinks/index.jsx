@@ -6,7 +6,7 @@ const FooterLinks = () => {
     <div>
       <ul className="footer-links">
           <li>
-            <Link to={"/contactos"} className="footer-link">
+            <Link to={"/contacto"} className="footer-link">
               Contactos
             </Link>
           </li>

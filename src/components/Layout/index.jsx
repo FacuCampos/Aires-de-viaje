@@ -1,4 +1,4 @@
-import { Footer, FooterLinks, LinksSection, Navbar} from "../../components"
+import { Footer, LinksSection, Navbar} from "../../components"
 
 const Layout = ({children}) => {
     return(

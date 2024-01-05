@@ -1,5 +1,5 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { Alquileres, Autos, CheckOut, Home, Hospedajes, Paquetes, Vuelos } from "../pages";
+import { Alquileres, Autos, CheckOut, Home, Hospedajes, Nosotros, Paquetes, Vuelos, Contacto, Garantias } from "../pages";
 
 
 
@@ -7,39 +7,50 @@ import { Alquileres, Autos, CheckOut, Home, Hospedajes, Paquetes, Vuelos } from 
 const routes = createBrowserRouter([
     {
         path: '/',
-        element: <Home/>
+        element: <Home />
     },
     {
-      path:'/alquileres',
-      element:<Alquileres/>
+        path: '/alquileres',
+        element: <Alquileres />
+    },
+    {
+        path: '/vuelos',
+        element: <Vuelos />
+    },
+    {
+        path: '/hospedajes',
+        element: <Hospedajes />
+    },
+    {
+        path: '/paquetes',
+        element: <Paquetes />
+    },
+    {
+        path: '/autos',
+        element: <Autos />
+    },
+    {
+        path: '/checkout',
+        element: <CheckOut />
+    },
+    {
+        path: '/nosotros',
+        element: <Nosotros />
+    },
+    {
+        path: '/contacto',
+        element: <Contacto />
 
     },
     {
-        path:'/vuelos',
-        element:<Vuelos/>
-    },
-   
-    {  
-    path:'/hospedajes',
-    element: <Hospedajes/>
+        path: '/garantias',
+        element: <Garantias />
 
-    },
-    {
-        path:'/paquetes',
-        element:<Paquetes/>
-    },
-    {
-        path:'/autos',
-        element:<Autos/>
-    },
-     {
-        path:'/checkout',
-        element:<CheckOut/>
-    },
+    }
 ])
 
 const Navigation = () => {
-    return(
+    return (
         <RouterProvider router={routes} />
     );
 }

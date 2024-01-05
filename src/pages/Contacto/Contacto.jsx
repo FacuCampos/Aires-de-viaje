@@ -1,7 +1,7 @@
 //import { Layout} from "../../components";
-import "./Contactos.css";
+import "./Contacto.css";
 
-const Contactos = () => {
+const Contacto = () => {
   return (
    
  <div className="container-contactos">
@@ -57,4 +57,4 @@ const Contactos = () => {
   );
 };
 
-export default Contactos;
+export default Contacto;

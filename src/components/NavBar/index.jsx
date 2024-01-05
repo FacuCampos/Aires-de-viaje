@@ -15,43 +15,43 @@ const NavBar = () => {
       {/* Barra superior */}
       <div className="navbarTopContenedor">
         <h2 className="m-0 logo">Logo</h2>
-        <X className={`navIcon ${menuOpen && "mostrar"}`} onClick={toggleMenu}/>
-        <List className={`navIcon ${!menuOpen && "mostrar"}`} onClick={toggleMenu}/>
+        <X className={`navIcon ${menuOpen && "mostrar"}`} onClick={toggleMenu} />
+        <List className={`navIcon ${!menuOpen && "mostrar"}`} onClick={toggleMenu} />
       </div>
 
       {/* Desplegable */}
       <div className={`navbarList ${menuOpen && "open"}`}>
-        <NavLink className="logoDesktop d-none d-lg-flex">Logo</NavLink>
+        <NavLink to={'/'} className="logoDesktop d-none d-lg-flex">Logo</NavLink>
         <SearchInput />
-        <hr className="m-0"/>
+        <hr className="m-0" />
         <NavLink className="navbarItem">
-          <PeopleFill/>
+          <PeopleFill />
           <p>Ingresar</p>
         </NavLink>
-        <hr className="m-0"/>
+        <hr className="m-0" />
         <NavLink className="navbarItem">
-          <FileEarmarkTextFill/>
+          <FileEarmarkTextFill />
           <p>Blog</p>
         </NavLink>
-        <hr className="m-0"/>
-        <NavLink className="navbarItem">
-          <CupHotFill/>
-       <NavLink to="/Nosotros"> <p>Quienes somos</p></NavLink>
+        <hr className="m-0" />
+        <NavLink className="navbarItem" to={"/Nosotros"}>
+          <CupHotFill />
+          <p>Quienes somos</p>
         </NavLink>
-        
-        <hr className="m-0"/>
+
+        <hr className="m-0" />
         <NavLink className="navbarItem">
-          <QuestionCircleFill/>
+          <QuestionCircleFill />
           <p>FAQs</p>
         </NavLink>
-        <hr className="m-0"/>
+        <hr className="m-0" />
         <NavLink className="navbarItem">
-          <Globe/>
+          <Globe />
           <p>Idioma</p>
         </NavLink>
       </div>
     </nav>
-    );
-  };
+  );
+};
 
 export default NavBar;
